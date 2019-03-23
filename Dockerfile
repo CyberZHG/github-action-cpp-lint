@@ -10,7 +10,7 @@ LABEL "homepage"="https://github.com/CyberZHG/github-action-cpp-lint"
 LABEL "maintainer"="CyberZHG <CyberZHG@gmail.com>"
 
 RUN pip install --upgrade pip
-RUN pip install pycodestyle
+RUN pip install cpplint
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
